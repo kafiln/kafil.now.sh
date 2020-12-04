@@ -24,7 +24,7 @@ export default function Home() {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <div className="">
+      <div className="py-6 bg-yellow-400 px-2 w-full">
         <h1>Welcome to my Blog</h1>
       </div>
     </div>
