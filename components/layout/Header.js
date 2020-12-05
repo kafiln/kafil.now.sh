@@ -1,13 +1,16 @@
 import Link from "next/link";
 import React from "react";
 import Avatar from "../common/Avatar";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const activeClasses = "bg-white font-bold rounded text-black";
+  const { route } = useRouter();
   const pages = [
     { name: "projects" },
     { name: "about" },
     { name: "blog" },
-    { name: "contact", styles: "p-2 bg-red-600 text-white rounded" },
+    { name: "contact" },
   ];
   return (
     <header className="flex px-4 py-4 bg-blue-900 justify-between items-center text-white">
@@ -21,16 +24,21 @@ const Header = () => {
         <ul className="flex flex-row space-x-4 cursor-pointer">
           {pages.map((page) => {
             return (
-              <li key={page.name} className="capitalize">
+              <li
+                key={page.name}
+                className={`p-2 capitalize ${
+                  page.name === route.slice(1) ? activeClasses : ""
+                }`}
+              >
                 <Link href={`/${page.name}`}>
-                  <a className={page.styles}>{page.name}</a>
+                  <a>{page.name}</a>
                 </Link>
               </li>
             );
           })}
         </ul>
         <svg
-          className="w-4"
+          className="w-8 cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           stroke="currentColor"
