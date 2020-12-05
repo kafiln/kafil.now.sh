@@ -4,12 +4,17 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="flex items-center justify-between space-x-16 p-16">
-      <Image src="/hero.svg" height={512} width={512} />
+      <Image
+        alt="A person using a laptop"
+        src="/hero.svg"
+        height={512}
+        width={512}
+      />
       <div className="flex flex-col space-y-4">
         <div className="flex flex-col space-y-2">
-          <p className="text-sm text-gray-400">Hello, my name is</p>
+          <p className="text-sm text-gray-600">Hello, my name is</p>
           <h1 className="text-xl">Kafil Nasdami</h1>
-          <h2 className="text-gray-400">Full Stack C# Javascript developer</h2>
+          <h2 className="text-gray-600">Full Stack C# Javascript developer</h2>
           <div className="text-xs">
             <p>
               I love programming, which makes what I do not only a job but also

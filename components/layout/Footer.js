@@ -34,17 +34,18 @@ const Footer = () => {
             .filter((item) => item.display)
             .map((item) => {
               return (
-                <a
-                  key={item.name}
-                  alt={item.name}
-                  className="capitalize"
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="hidden">{item.name}</span>
-                  <item.icon />
-                </a>
+                <li key={item.name}>
+                  <a
+                    alt={item.name}
+                    aria-label={item.name}
+                    className=""
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <item.icon />
+                  </a>
+                </li>
               );
             })}
         </ul>
