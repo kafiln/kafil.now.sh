@@ -1,10 +1,12 @@
-import { Layout } from "../components/layout";
+import { HeroSection, Layout } from "../components/layout";
 
 export default function Home() {
   return (
     <div>
       <Layout>
-        <h1>Welcome to my Blog</h1>
+        <div className="flex flex-col">
+          <HeroSection />
+        </div>
       </Layout>
     </div>
   );
