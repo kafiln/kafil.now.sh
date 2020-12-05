@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer className="flex px-4 py-4 bg-blue-900 text-white justify-between">
       <h1>
-        Kafil NASDAMI | <span className="text-gray-400 text-sm">2020</span>
+        Kafil NASDAMI | <span className="text-gray-200 text-sm">2020</span>
       </h1>
       <nav>
         <ul className="flex flex-row space-x-4 cursor-pointer">
@@ -36,6 +36,7 @@ const Footer = () => {
               return (
                 <a
                   key={item.name}
+                  alt={item.name}
                   className="capitalize"
                   href={item.url}
                   target="_blank"

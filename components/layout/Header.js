@@ -14,9 +14,7 @@ const Header = () => {
       <Link href="/">
         <div className="flex items-center space-x-2 cursor-pointer">
           <Avatar />
-          <h1 className="text-xl">
-            <a>Kafil</a>
-          </h1>
+          <h1 className="text-xl">Kafil</h1>
         </div>
       </Link>
       <nav>
