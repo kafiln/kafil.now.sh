@@ -24,7 +24,7 @@ const Footer = () => {
     { name: "mail", url: "mailto:kafil.nasdami@gmail.com" },
   ];
   return (
-    <footer className="flex px-4 py-4 bg-blue-900 text-white justify-between">
+    <footer className="flex px-4 py-4 bg-gray-900 text-white justify-between">
       <h1>
         Kafil NASDAMI | <span className="text-gray-200 text-sm">2020</span>
       </h1>
