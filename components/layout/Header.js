@@ -1,5 +1,6 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
+import Avatar from "../common/Avatar";
 
 const Header = () => {
   const pages = [
@@ -9,18 +10,21 @@ const Header = () => {
     { name: "contact", styles: "p-2 bg-red-600 text-white rounded" },
   ];
   return (
-    <header className="flex px-4 py-4 bg-blue-900 justify-between text-white">
-      <h1>
-        <Link href="/">
-          <a>Kafil</a>
-        </Link>
-      </h1>
+    <header className="flex px-4 py-4 bg-blue-900 justify-between items-center text-white">
+      <Link href="/">
+        <div className="flex items-center space-x-2 cursor-pointer">
+          <Avatar />
+          <h1 className="text-xl">
+            <a>Kafil</a>
+          </h1>
+        </div>
+      </Link>
       <nav>
         <ul className="flex flex-row space-x-4 cursor-pointer">
           {pages.map((page) => {
             return (
               <li key={page.name} className="capitalize">
-                <Link href={page.name}>
+                <Link href={`/${page.name}`}>
                   <a className={page.styles}>{page.name}</a>
                 </Link>
               </li>
