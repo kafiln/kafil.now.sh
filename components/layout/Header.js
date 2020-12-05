@@ -1,16 +1,28 @@
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
-  const pages = ["projects", "about", "blog", "contact"];
+  const pages = [
+    { name: "projects" },
+    { name: "about" },
+    { name: "blog" },
+    { name: "contact", styles: "p-2 bg-red-600 text-white rounded" },
+  ];
   return (
     <header className="flex px-4 py-4 bg-blue-900 justify-between text-white">
-      <h1>Kafil</h1>
+      <h1>
+        <Link href="/">
+          <a>Kafil</a>
+        </Link>
+      </h1>
       <nav>
         <ul className="flex flex-row space-x-4 cursor-pointer">
           {pages.map((page) => {
             return (
-              <li key={page} className="capitalize">
-                {page}
+              <li key={page.name} className="capitalize">
+                <Link href={page.name}>
+                  <a className={page.styles}>{page.name}</a>
+                </Link>
               </li>
             );
           })}
