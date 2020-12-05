@@ -1,11 +1,11 @@
-import DefaultLayout from "../components/layout/DefaultLayout";
+import { Layout } from "../components/layout";
 
 export default function Home() {
   return (
     <div>
-      <DefaultLayout>
+      <Layout>
         <h1>Welcome to my Blog</h1>
-      </DefaultLayout>
+      </Layout>
     </div>
   );
 }

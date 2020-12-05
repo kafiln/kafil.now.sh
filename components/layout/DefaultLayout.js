@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { Header, Footer } from "./";
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -26,13 +27,9 @@ const DefaultLayout = ({ children }) => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <header className="flex px-4 bg-blue-800">
-        <h1>Kafil</h1>
-      </header>
+      <Header />
       <main className="flex flex-1 px-4">{children}</main>
-      <footer className="flex px-4 bg-blue-800">
-        <h1>Kafil NASDAMI | 2020</h1>
-      </footer>
+      <Footer />
     </div>
   );
 };
