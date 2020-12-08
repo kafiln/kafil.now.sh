@@ -41,8 +41,8 @@ const Header = () => {
               "/" === route ? activeClasses : ""
             }`}
           >
-            <Link href={`/`}>
-              <a>
+            <Link href="/">
+              <a aria-label="Home">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
