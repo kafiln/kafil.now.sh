@@ -1,4 +1,4 @@
-# Persnal Website
+# Personal Website
 
 Welcome to my personal website, or as I like to call it, my home in the large web world.
 In this place you will learn more about me, see the projects I'm working on, read my blog posts and more.

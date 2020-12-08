@@ -21,7 +21,7 @@ const Header = () => {
         </div>
       </Link>
       <nav className="flex space-x-4">
-        <ul className="flex flex-row space-x-4 cursor-pointer">
+        <ul className="flex flex-row space-x-4 cursor-pointer items-center">
           {pages.map((page) => {
             return (
               <li
