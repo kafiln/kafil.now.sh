@@ -1,13 +1,12 @@
+import { Flex } from "@chakra-ui/react";
 import { HeroSection, Layout } from "../components/layout";
 
 export default function Home() {
   return (
-    <div>
-      <Layout>
-        <div className="flex flex-col">
-          <HeroSection />
-        </div>
-      </Layout>
-    </div>
+    <Layout>
+      <Flex direction="column">
+        <HeroSection />
+      </Flex>
+    </Layout>
   );
 }
