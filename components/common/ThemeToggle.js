@@ -4,7 +4,6 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 const ThemeToggle = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  console.log(colorMode);
   return (
     <Box
       className={`p-2 cursor-pointer`}

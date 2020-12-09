@@ -1,12 +1,9 @@
+import { Avatar, Box, Flex, Heading } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
-import { useRouter } from "next/router";
-import { Avatar, Box, Flex, Heading, Spacer } from "@chakra-ui/react";
 import { ThemeToggle } from "../common";
 
 const Header = () => {
-  const activeClasses = "bg-white font-bold rounded text-black";
-  const { route } = useRouter();
   const pages = [
     { name: "projects" },
     { name: "about" },
@@ -14,13 +11,7 @@ const Header = () => {
     { name: "contact" },
   ];
   return (
-    <Flex
-      as="header"
-      p={4}
-      justifyContent="space-between"
-      bg="blue.600"
-      color="white"
-    >
+    <Flex as="header" p={4} justifyContent="space-between">
       <Link href="/">
         <Flex alignItems="center" style={{ cursor: "pointer" }}>
           <Avatar name="Kafil Nasdami" src="./me.png" />

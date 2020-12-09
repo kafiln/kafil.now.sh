@@ -1,27 +1,27 @@
-import React from "react";
-import Image from "next/image";
 import {
+  Button,
+  ButtonGroup,
   Container,
   Flex,
-  Box,
   Heading,
+  HStack,
   Text,
-  Button,
-  Spacer,
-  ButtonGroup,
+  VStack,
 } from "@chakra-ui/react";
+import Image from "next/image";
+import React from "react";
 
 const HeroSection = () => {
   return (
-    <Flex as="section" alignItems="center" justifyContent="center">
+    <HStack as="section" spacing={8}>
       <Image
         alt="A person using a laptop"
         src="/hero.svg"
         height={512}
         width={512}
       />
-      <Flex ml={4} direction="column" className="space-y-4">
-        <Flex direction="column" className="space-y-2">
+      <VStack spacing={4}>
+        <VStack spacing={2} align="start">
           <Text fontSize="lg">Hello, my name is</Text>
           <Heading as="h1" size="md">
             Kafil Nasdami
@@ -40,15 +40,15 @@ const HeroSection = () => {
             would get the job done in a convenient period of time, then I guess
             I am your man.
           </Container>
-        </Flex>
+        </VStack>
         <Flex justifyContent="center">
-          <ButtonGroup colorScheme="red.800" spacing="2">
-            <Button>Contact</Button>
+          <ButtonGroup spacing="2">
+            <Button colorScheme="purple">Contact</Button>
             <Button>View Resume</Button>
           </ButtonGroup>
         </Flex>
-      </Flex>
-    </Flex>
+      </VStack>
+    </HStack>
   );
 };
 

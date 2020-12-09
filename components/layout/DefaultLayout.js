@@ -1,4 +1,4 @@
-import { Flex, Stack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import { Footer, Header } from "./";
@@ -26,16 +26,14 @@ const SEO = () => (
 
 const DefaultLayout = ({ children }) => {
   return (
-    <Stack>
-      <Flex height="100vh" direction="column" color="black" bg="white">
-        <SEO />
-        <Header />
-        <Flex as="main" px={4} flex={1}>
-          {children}
-        </Flex>
-        <Footer />
+    <Flex height="100vh" direction="column">
+      <SEO />
+      <Header />
+      <Flex as="main" px={4} flex={1}>
+        {children}
       </Flex>
-    </Stack>
+      <Footer />
+    </Flex>
   );
 };
 

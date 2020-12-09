@@ -1,4 +1,4 @@
-import { Flex, Heading, Box } from "@chakra-ui/react";
+import { Flex, Heading, Box, HStack } from "@chakra-ui/react";
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
@@ -25,22 +25,16 @@ const Footer = () => {
     { name: "mail", url: "mailto:kafil.nasdami@gmail.com" },
   ];
   return (
-    <Flex
-      p={4}
-      as="footer"
-      justifyContent="space-between"
-      bg="blue.600"
-      color="white"
-    >
+    <Flex p={4} as="footer" justifyContent="space-between">
       <Heading as="h1" mx={2} size="sm">
         Kafil NASDAMI
       </Heading>
-      <Flex as="ul">
+      <HStack as="ul" spacing={10}>
         {socials
           .filter((item) => item.display)
           .map((item) => {
             return (
-              <Box as="li" key={item.name} mx={2}>
+              <Box as="li" key={item.name} style={{ listStyle: "none" }}>
                 <a
                   alt={item.name}
                   aria-label={item.name}
@@ -53,7 +47,7 @@ const Footer = () => {
               </Box>
             );
           })}
-      </Flex>
+      </HStack>
     </Flex>
   );
 };
