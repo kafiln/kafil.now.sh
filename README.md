@@ -23,14 +23,16 @@ Thank you :)
 
 ## Uses
 
-## Tools
+### Tools
 
 - VS Code
 
 ### Code
 
+- Typescript
+- React
 - Nextjs
-- TailwindCSS
+- Chakra UI
 
 ### Design
 

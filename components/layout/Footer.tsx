@@ -36,7 +36,6 @@ const Footer = () => {
             return (
               <Box as="li" key={item.name} style={{ listStyle: "none" }}>
                 <a
-                  alt={item.name}
                   aria-label={item.name}
                   href={item.url}
                   target="_blank"
