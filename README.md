@@ -1,3 +1,5 @@
+![banner]('../../public/banner-thumbnail.png)
+
 # Personal Website
 
 Welcome to my personal website, or as I like to call it, my home in the large web world.
