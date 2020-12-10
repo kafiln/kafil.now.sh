@@ -2,7 +2,7 @@
 
 
 
-![banner]('./../public/banner-thumbnail.png)
+![banner]('../../public/banner-thumbnail.png)
 
 
 Welcome to my personal website, or as I like to call it, my home in the large web world.
