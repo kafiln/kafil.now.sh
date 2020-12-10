@@ -1,5 +1,11 @@
 # Personal Website
 
+<center>
+
+![banner]('../../public/android-chrome-192x192.png)
+
+</center>
+
 Welcome to my personal website, or as I like to call it, my home in the large web world.
 In this place you will learn more about me, see the projects I'm working on, read my blog posts and more.
 Please feel free to reach out to my for any feedback and suggestion.
