@@ -1,27 +1,19 @@
-import { Avatar, Box, Flex, Heading, HStack } from "@chakra-ui/react";
-import Link from "next/link";
-import React from "react";
-import { MobileMenu, DesktopMenu } from ".";
-import { ThemeToggle } from "../common";
+import { Flex, HStack } from '@chakra-ui/react';
+import React from 'react';
+import { Brand, DesktopMenu, MobileMenu } from '.';
+import { ThemeToggle } from '../common';
 
 const Header = () => {
   const pages = [
-    { name: "projects" },
-    { name: "about" },
-    { name: "blog" },
-    { name: "contact" },
+    { name: 'projects' },
+    { name: 'about' },
+    { name: 'blog' },
+    { name: 'contact' },
   ];
 
   return (
     <Flex as="header" p={4} justifyContent="space-between">
-      <Link href="/">
-        <Flex alignItems="center" style={{ cursor: "pointer" }}>
-          <Avatar name="Kafil Nasdami" src="./me.png" />
-          <Heading mx={2} size="sm">
-            Kafil
-          </Heading>
-        </Flex>
-      </Link>
+      <Brand />
       <HStack as="nav" alignItems="center" justifyContent="center" spacing={2}>
         <DesktopMenu pages={pages} />
         <MobileMenu pages={pages} />
