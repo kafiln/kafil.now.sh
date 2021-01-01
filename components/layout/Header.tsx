@@ -1,7 +1,7 @@
 import { Flex, HStack } from '@chakra-ui/react';
 import React from 'react';
 import { Brand, DesktopMenu, MobileMenu } from '.';
-import { ThemeToggle } from '../common';
+import { ThemeToggle, HomeButton } from '../common';
 
 const Header = () => {
   const pages = [
@@ -17,6 +17,7 @@ const Header = () => {
       <HStack as="nav" alignItems="center" justifyContent="center" spacing={2}>
         <DesktopMenu pages={pages} />
         <MobileMenu pages={pages} />
+        <HomeButton />
         <ThemeToggle />
       </HStack>
     </Flex>

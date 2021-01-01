@@ -1,5 +1,6 @@
-import { Flex, Box, Link } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Box } from '@chakra-ui/react';
+import React from 'react';
+import Link from 'next/link';
 
 const DesktopMenu = ({ pages }) => {
   return (
@@ -7,9 +8,9 @@ const DesktopMenu = ({ pages }) => {
       as="ul"
       alignItems="center"
       justifyContent="center"
-      visibility={{ base: "hidden", md: "visible" }}
+      visibility={{ base: 'hidden', md: 'visible' }}
     >
-      {pages.map((page) => {
+      {pages.map(page => {
         return (
           <Box
             as="li"
@@ -17,11 +18,13 @@ const DesktopMenu = ({ pages }) => {
             p={2}
             key={page.name}
             style={{
-              listStyle: "none",
-              textTransform: "capitalize",
+              listStyle: 'none',
+              textTransform: 'capitalize',
             }}
           >
-            <Link href={`/${page.name}`}>{page.name}</Link>
+            <Link href={`/${page.name}`}>
+              <a>{page.name}</a>
+            </Link>
           </Box>
         );
       })}

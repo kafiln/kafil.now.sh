@@ -8,17 +8,18 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  Link,
   useDisclosure,
-} from "@chakra-ui/react";
-import React from "react";
-import { MdMenu } from "react-icons/md";
+} from '@chakra-ui/react';
+import React from 'react';
+import { MdMenu } from 'react-icons/md';
+import Link from 'next/link';
+import { HomeButton } from '../common';
 
 const MobileMenu = ({ pages }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
-    <Box visibility={{ base: "visible", md: "hidden" }}>
+    <Box visibility={{ base: 'visible', md: 'hidden' }}>
       <Button ref={btnRef} onClick={onOpen}>
         <MdMenu />
       </Button>
@@ -27,7 +28,9 @@ const MobileMenu = ({ pages }) => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Menu</DrawerHeader>
+            <DrawerHeader>
+              <HomeButton onClick={onClose} />
+            </DrawerHeader>
             <DrawerBody>
               <Flex
                 as="ul"
@@ -35,7 +38,7 @@ const MobileMenu = ({ pages }) => {
                 alignItems="center"
                 justifyContent="space-between"
               >
-                {pages.map((page) => {
+                {pages.map(page => {
                   return (
                     <Box
                       as="li"
@@ -43,12 +46,12 @@ const MobileMenu = ({ pages }) => {
                       p={2}
                       key={page.name}
                       style={{
-                        listStyle: "none",
-                        textTransform: "capitalize",
+                        listStyle: 'none',
+                        textTransform: 'capitalize',
                       }}
                     >
-                      <Link onClick={onClose} href={`/${page.name}`}>
-                        {page.name}
+                      <Link href={`/${page.name}`}>
+                        <a onClick={onClose}>{page.name}</a>
                       </Link>
                     </Box>
                   );
