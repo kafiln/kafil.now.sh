@@ -10,17 +10,23 @@ import {
   Flex,
   useDisclosure,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 import { MdMenu } from 'react-icons/md';
-import Link from 'next/link';
 import { HomeButton } from '../common';
 
 const MobileMenu = ({ pages }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
-    <Box visibility={{ base: 'visible', md: 'hidden' }}>
-      <Button ref={btnRef} onClick={onOpen}>
+    <>
+      <Button
+        variant="outline"
+        colorScheme="black"
+        ref={btnRef}
+        onClick={onOpen}
+        display={{ md: 'none' }}
+      >
         <MdMenu />
       </Button>
 
@@ -61,7 +67,7 @@ const MobileMenu = ({ pages }) => {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    </Box>
+    </>
   );
 };
 

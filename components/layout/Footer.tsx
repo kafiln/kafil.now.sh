@@ -42,9 +42,9 @@ const Footer = () => {
       bg={bg}
     >
       <Heading as="h1" mx={2} size="sm">
-        Kafil NASDAMI
+        Kafil @ {new Date().getFullYear()}
       </Heading>
-      <HStack as="ul" spacing={10}>
+      <HStack as="ul" spacing={4}>
         {socials
           .filter(item => item.display)
           .map(item => {
@@ -56,7 +56,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <item.icon size="2em" />
+                  <item.icon size="1.5em" />
                 </a>
               </Box>
             );

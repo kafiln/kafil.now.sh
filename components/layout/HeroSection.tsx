@@ -4,7 +4,6 @@ import {
   Container,
   Flex,
   Heading,
-  HStack,
   Stack,
   Text,
   VStack,
@@ -15,7 +14,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <Stack
-      width="100vw"
+      width="100%"
       as="section"
       spacing={8}
       alignItems="center"
@@ -29,7 +28,7 @@ const HeroSection = () => {
         width={512}
       />
       <VStack spacing={4}>
-        <VStack spacing={2} align="start">
+        <VStack spacing={2} align={{ base: 'center', md: 'start' }}>
           <Text fontSize="lg">Hello, my name is</Text>
           <Heading as="h1" size="md">
             Kafil Nasdami

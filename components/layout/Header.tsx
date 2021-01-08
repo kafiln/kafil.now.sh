@@ -25,9 +25,11 @@ const Header = () => {
       <Brand />
       <HStack as="nav" alignItems="center" justifyContent="center" spacing={2}>
         <DesktopMenu pages={pages} />
-        <MobileMenu pages={pages} />
-        <HomeButton />
-        <ThemeToggle />
+        <HStack spacing={4}>
+          <HomeButton />
+          <ThemeToggle />
+          <MobileMenu pages={pages} />
+        </HStack>
       </HStack>
     </Flex>
   );
