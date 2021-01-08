@@ -8,7 +8,7 @@ const DesktopMenu = ({ pages }) => {
       as="ul"
       alignItems="center"
       justifyContent="center"
-      visibility={{ base: 'hidden', md: 'visible' }}
+      display={{ base: 'none', md: 'flex' }}
     >
       {pages.map(page => {
         return (
