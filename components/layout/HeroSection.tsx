@@ -5,6 +5,7 @@ import {
   Flex,
   Heading,
   HStack,
+  Stack,
   Text,
   VStack,
 } from '@chakra-ui/react';
@@ -13,12 +14,13 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <HStack
+    <Stack
       width="100vw"
       as="section"
       spacing={8}
       alignItems="center"
       justify="center"
+      direction={{ base: 'column', md: 'row' }}
     >
       <Image
         alt="A person using a laptop"
@@ -52,7 +54,7 @@ const HeroSection = () => {
           </ButtonGroup>
         </Flex>
       </VStack>
-    </HStack>
+    </Stack>
   );
 };
 

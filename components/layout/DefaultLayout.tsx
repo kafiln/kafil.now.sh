@@ -8,7 +8,7 @@ const DefaultLayout = ({ children }) => {
     <Flex height="100vh" direction="column">
       <SEO />
       <Header />
-      <Flex as="main" px={4} flex={1}>
+      <Flex as="main" p={4} flex={1}>
         {children}
       </Flex>
       <Footer />
