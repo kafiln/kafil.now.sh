@@ -4,4 +4,5 @@ export { default as Header } from './Header';
 export { default as MobileMenu } from './MobileMenu';
 export { default as DesktopMenu } from './DesktopMenu';
 export { default as HeroSection } from './HeroSection';
+export { default as ProjectSection } from './ProjectSection';
 export { default as Layout } from './DefaultLayout';

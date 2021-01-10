@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { BiHomeHeart } from 'react-icons/bi';
 
-export declare type HomeButtonProps = {
+export type HomeButtonProps = {
   size?: number;
   color?: string;
   onClick?: () => void;
