@@ -1,10 +1,10 @@
-import { Flex } from "@chakra-ui/react";
-import { HeroSection, Layout } from "../components/layout";
+import { HeroSection, PostsSection, Layout } from '../components/layout';
 
 export default function Home() {
   return (
     <Layout>
       <HeroSection />
+      <PostsSection />
     </Layout>
   );
 }

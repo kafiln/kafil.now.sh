@@ -4,23 +4,16 @@ import {
   Container,
   Flex,
   Heading,
-  Stack,
   Text,
   VStack,
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import React from 'react';
+import { Section } from '.';
 
 const HeroSection = () => {
   return (
-    <Stack
-      width="100%"
-      as="section"
-      spacing={8}
-      alignItems="center"
-      justify="center"
-      direction={{ base: 'column', md: 'row' }}
-    >
+    <Section direction={{ base: 'column', md: 'row' }}>
       <Image
         alt="A person using a laptop"
         src="/hero.svg"
@@ -53,7 +46,7 @@ const HeroSection = () => {
           </ButtonGroup>
         </Flex>
       </VStack>
-    </Stack>
+    </Section>
   );
 };
 
