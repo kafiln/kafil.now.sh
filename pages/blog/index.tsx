@@ -1,6 +1,6 @@
-import React from "react";
-import { Layout } from "../components/layout";
-import { useRouter } from "next/router";
+import React from 'react';
+import { Layout } from '../../components/layout';
+import { useRouter } from 'next/router';
 
 const Blog = () => {
   const { locale } = useRouter();

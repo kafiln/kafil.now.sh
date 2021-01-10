@@ -13,7 +13,7 @@
     "test:e2e": "start-server-and-test dev 3000 cy:open"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.1.2",
+    "@chakra-ui/react": "1.1.2",
     "@emotion/react": "^11.1.2",
     "@emotion/styled": "^11.0.0",
     "@types/node": "^14.14.17",
