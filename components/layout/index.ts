@@ -8,4 +8,5 @@ export { default as DesktopMenu } from './DesktopMenu';
 export { default as HeroSection } from './HeroSection';
 export { default as ContactSection } from './ContactSection';
 export { default as PostsSection } from './PostsSection';
+export { default as ProjectSection } from './ProjectSection';
 export { default as Layout } from './DefaultLayout';

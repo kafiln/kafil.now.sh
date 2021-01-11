@@ -11,9 +11,15 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
+import { Post } from './PostsSection';
 
-const PostCard = ({ post }) => {
-  const { title, date, description, slug, picture, tags } = post;
+interface PostCardProps {
+  post: Post;
+}
+
+const PostCard = ({
+  post: { title, date, description, slug, picture, tags },
+}: PostCardProps) => {
   return (
     <Box
       borderWidth="1px"
