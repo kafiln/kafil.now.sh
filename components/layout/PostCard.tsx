@@ -17,12 +17,13 @@ const PostCard = ({ post }) => {
   return (
     <Box
       borderWidth="1px"
-      borderRadius="lg"
+      rounded="lg"
       overflow="hidden"
       borderColor="gray.300"
+      boxShadow="sm"
     >
       <Image src={picture} alt={title} />
-      <VStack spacing={2} padding={2}>
+      <VStack spacing={2} padding={4}>
         <Heading as="h3" size="sm" isTruncated>
           {title}
         </Heading>

@@ -6,5 +6,6 @@ export { default as Section } from './Section';
 export { default as MobileMenu } from './MobileMenu';
 export { default as DesktopMenu } from './DesktopMenu';
 export { default as HeroSection } from './HeroSection';
+export { default as ContactSection } from './ContactSection';
 export { default as PostsSection } from './PostsSection';
 export { default as Layout } from './DefaultLayout';
