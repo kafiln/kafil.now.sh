@@ -27,16 +27,12 @@ const HeroSection = () => {
             Kafil Nasdami
           </Heading>
           <Heading as="h2" size="sm">
-            Full Stack C# Javascript developer
+            Computer Science Engineer / Full Stack developer
           </Heading>
           <Container p="0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            I love programming, which makes what I do not only a job but also a
+            passion. As part of my previous experiences, I've build a lot of
+            websites, web and mobile application, from scratch.
           </Container>
         </VStack>
         <Flex justifyContent="center">
