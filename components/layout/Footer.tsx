@@ -1,16 +1,8 @@
-import {
-  Flex,
-  Heading,
-  Box,
-  HStack,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack } from '@chakra-ui/react';
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { getColors } from './utils';
 const Footer = () => {
-  const bg = useColorModeValue('red.500', 'red.100');
-  const color = useColorModeValue('white', 'blue.900');
-
   const socials = [
     {
       icon: FaGithub,
@@ -34,13 +26,7 @@ const Footer = () => {
     { name: 'mail', url: 'mailto:kafil.nasdami@gmail.com' },
   ];
   return (
-    <Flex
-      p={4}
-      as="footer"
-      justifyContent="space-between"
-      color={color}
-      bg={bg}
-    >
+    <Flex p={4} as="footer" justifyContent="space-between" {...getColors()}>
       <Heading as="h1" mx={2} size="sm">
         Kafil @ {new Date().getFullYear()}
       </Heading>
