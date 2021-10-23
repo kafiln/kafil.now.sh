@@ -35,3 +35,6 @@ yarn-error.log*
 
 # use yarn.lock instead
 package-lock.json
+
+# storybook dis folder
+/storybook-static
