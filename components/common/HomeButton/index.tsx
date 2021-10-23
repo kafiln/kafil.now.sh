@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { BiHomeHeart } from 'react-icons/bi';
 
@@ -9,12 +9,16 @@ export type HomeButtonProps = {
 };
 
 const HomeButton = ({ size = 1.5, color, onClick }: HomeButtonProps) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/');
+    onClick && onClick();
+  };
   return (
-    <Link href="/">
-      <a onClick={onClick}>
-        <BiHomeHeart color={color} size={`${size}em`} />
-      </a>
-    </Link>
+    <a onClick={handleClick} data-testid="home">
+      <BiHomeHeart color={color} size={`${size}em`} />
+    </a>
   );
 };
 

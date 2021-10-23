@@ -28,7 +28,6 @@ describe('ThemeToggle', () => {
     );
     const box = container.firstChild;
     const sun = container.querySelector('svg');
-
     fireEvent.click(box);
     const moon = container.querySelector('svg');
     expect(sun).toMatchSnapshot();

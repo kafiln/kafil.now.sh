@@ -17,5 +17,10 @@ export const Large = (args: HomeButtonProps) => <HomeButton {...args} />;
 Large.args = {
   size: 2,
 };
+
+export const Green = (args: HomeButtonProps) => <HomeButton {...args} />;
+Green.args = {
+  color: 'green',
+};
 export const Default = (args: HomeButtonProps) => <HomeButton {...args} />;
 Default.args = {};
