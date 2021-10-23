@@ -1,3 +1,4 @@
+//TODO: extract from env
 export const GA_TRACKING_ID = 'G-ZELM2BWTDG';
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages

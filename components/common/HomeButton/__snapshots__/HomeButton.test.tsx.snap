@@ -3,7 +3,7 @@
 exports[`HomeButton should render without crashing 1`] = `
 <DocumentFragment>
   <a
-    href="/"
+    data-testid="home"
   >
     <svg
       fill="currentColor"
