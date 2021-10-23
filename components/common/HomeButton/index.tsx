@@ -16,7 +16,7 @@ const HomeButton = ({ size = 1.5, color, onClick }: HomeButtonProps) => {
     onClick && onClick();
   };
   return (
-    <a onClick={handleClick} data-testid="home">
+    <a onClick={handleClick} data-testid="home" style={{ cursor: 'pointer' }}>
       <BiHomeHeart color={color} size={`${size}em`} />
     </a>
   );
